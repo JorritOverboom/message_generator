@@ -6,3 +6,9 @@ const chooseRandom = arr => {
     let choice = arr[Math.floor(Math.random() * arr.length)]
     return choice;
 }
+
+const randomMessage = () => {
+    console.log(`I want to go to ${chooseRandom(destination)} by ${chooseRandom(transport)} there in ${chooseRandom(time)}.`);
+}
+
+randomMessage();
